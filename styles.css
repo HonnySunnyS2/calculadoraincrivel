@@ -1,1 +1,57 @@
+l.calculadora {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+            display.value = resultado.toString();
+            valorAtual = resultado.toString();
+            operacaoAtual = '';
+            valorAnterior = '';
+        } else if (valorBotao === 'C') {
+            valorAtual = '';
+            operacaoAtual = '';
+            valorAnterior = '';
+            display.value = '';
+        }
+    });
+});
